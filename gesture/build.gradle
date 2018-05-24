@@ -32,3 +32,16 @@ dependencies {
     compile 'com.android.support:appcompat-v7:27.+'
     testCompile 'junit:junit:4.12'
 }
+
+apply plugin: 'com.novoda.bintray-release'//添加
+
+publish {
+    userOrg = 'antelope001'    //注册时候的用户名
+    groupId = 'zhongmubao'//   //compile引用时的第1部分
+    artifactId = 'gesture'////发布到JCenter上的项目名字，compile引用时的第2部分项目名
+    uploadName = 'gesture'//为上传后，在bintray显示的名字。
+    publishVersion = '1.0.1'//版本号 ，compile引用时的最后部分，下次更新是只需要更改版本号即可
+    desc = 'the gestrue demo'//描述，不重要
+    website = 'https://github.com/lijianjun001/gestrue'  //项目的GitHub网站
+    licences = 'Apache-2.0'
+ }

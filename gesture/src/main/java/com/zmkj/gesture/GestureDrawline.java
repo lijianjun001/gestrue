@@ -324,7 +324,8 @@ public class GestureDrawline extends View {
     public interface GestureCallBack {
 
         /**
-         * 用户设置/输入了手势密码
+         *
+         * @param inputCode 输入的数
          */
         public abstract void onGestureCodeInput(String inputCode);
 

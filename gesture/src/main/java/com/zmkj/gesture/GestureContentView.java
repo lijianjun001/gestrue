@@ -32,7 +32,7 @@ public class GestureContentView extends ViewGroup {
     /**
      * 包含9个ImageView的容器，初始化
      *
-     * @param context
+     * @param context 上下文
      * @param isVerify 是否为校验手势密码
      * @param passWord 用户传入密码
      * @param callBack 手势绘制完毕的回调
@@ -109,9 +109,8 @@ public class GestureContentView extends ViewGroup {
     }
 
     /**
-     * 保留路径delayTime时间长
      *
-     * @param delayTime
+     * @param delayTime 保留路径delayTime时间长
      */
     public void clearDrawlineState(long delayTime) {
         gestureDrawline.clearDrawlineState(delayTime);
